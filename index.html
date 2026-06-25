@@ -104,7 +104,8 @@ async function register() {
         const data = await res.json();
         msg.innerText = "Registered successfully!";
       } catch (err) {
-        msg.innerText = "Error connecting to server";
+        console.log(err);
+        msg.innerText = err.toString();
       }
     }
   </script>
