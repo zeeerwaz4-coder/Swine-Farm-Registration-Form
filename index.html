@@ -96,8 +96,7 @@ async function register() {
       msg.innerText = "Registering...";
 
       try {
-        const res = await fetch("https://script.google.com/macros/s/AKfycbyeD5XYUCS1-o_UvPAHm0Og4biCmAViGOvdpGUxV8pywWpHNglIg-J5EkolMVLERtOX/exec
-", {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbyeD5XYUCS1-o_UvPAHm0Og4biCmAViGOvdpGUxV8pywWpHNglIg-J5EkolMVLERtOX/exec", {
           method: "POST",
           body: JSON.stringify({ name, farm, phone })
         });
