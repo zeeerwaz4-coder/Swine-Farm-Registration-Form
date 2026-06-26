@@ -98,8 +98,7 @@ async function register() {
       try {
         const res = await fetch("https://script.google.com/macros/s/AKfycbyeD5XYUCS1-o_UvPAHm0Og4biCmAViGOvdpGUxV8pywWpHNglIg-J5EkolMVLERtOX/exec", {
           method: "POST",
-          headers: { "Content-Type":
-            "application/json"},
+         
           body: JSON.stringify({ name, farm, phone })
         });
 
